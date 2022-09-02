@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="common.css">
 </head>
 <body>
 Осокина Мария Юрьевна<br>
@@ -14,24 +15,32 @@ P32091<br>
     <polygon points="290,10 300,0 310,10" fill="black"></polygon>
     <polygon points="590,290 600,300 590,310" fill="black"></polygon>
 </svg><br>
-X: <input type="text"><br>
-Y:
-<input type="checkbox"> -4
-<input type="checkbox"> -3
-<input type="checkbox"> -2
-<input type="checkbox"> -1
-<input type="checkbox"> 0
-<input type="checkbox"> 1
-<input type="checkbox"> 2
-<input type="checkbox"> 3
-<input type="checkbox"> 4
-<br>
-R:
-<button>1</button>
-<button>2</button>
-<button>3</button>
-<button>4</button>
-<button>5</button>
-<br>
+<form>
+    X:
+    <label><input type="text" oninput="validationX()" id="x" name="X"></label>
+    <span id="x-warning" style="display: none"></span>
+    <br>
+    Y:
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch-4" name="y"> -4</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch-3" name="y"> -3</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch-2" name="y"> -2</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch-1" name="y"> -1</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch0" name="y"> 0</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch1" name="y"> 1</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch2" name="y"> 2</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch3" name="y"> 3</label>
+    <label><input type="checkbox" oninput="checkboxVal(this)" id="ch4" name="y"> 4</label>
+    <br>
+    R:
+    <button type="button" id="btn1" disabled>1</button>
+    <button type="button" id="btn2" disabled>2</button>
+    <button type="button" id="btn3" disabled>3</button>
+    <button type="button" id="btn4" disabled>4</button>
+    <button type="button" id="btn5" disabled>5</button>
+    <input type="hidden" name="R">
+    <br>
+    <input type="submit">
+</form>
+<script src="validation.js"></script>
 </body>
 </html>

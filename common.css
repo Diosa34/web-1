@@ -1,0 +1,18 @@
+input#x{
+    height: 20px;
+    padding: 0;
+    font-size: 1rem;
+    border-width: 1px;
+    border-radius: 3px;
+    font-family: "Times New Roman", serif;
+}
+
+span#x-warning{
+    height: 20px;
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 3px;
+    background: #fcc6b3;
+    padding: 0;
+    font-size: 1rem;
+}
