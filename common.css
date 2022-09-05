@@ -1,3 +1,14 @@
+.center{
+    /*margin: auto;*/
+    text-align: center;
+    width: 50%;
+    border: 1px solid black;
+}
+
+svg{
+    font-size: 2rem;
+}
+
 input#x{
     height: 20px;
     padding: 0;
@@ -9,10 +20,23 @@ input#x{
 
 span#x-warning{
     height: 20px;
-    color: crimson;
+    color: #dc143c;
     border: 1px solid crimson;
     border-radius: 3px;
     background: #fcc6b3;
     padding: 0;
     font-size: 1rem;
+}
+
+input#submit{
+    margin-top: 3px;
+}
+
+table.result-table{
+    border-collapse: collapse;
+}
+
+table.result-table td{
+    border: 1px solid black;
+    padding: 3px;
 }

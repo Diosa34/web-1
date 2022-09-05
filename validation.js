@@ -2,8 +2,8 @@ let x = null
 function validationX(){
     let xElem = document.getElementById("x")
     let warning = document.getElementById("x-warning")
-    if (isNaN(xElem.value) || xElem.value === "") {
-        warning.innerText = "Координата Х должна быть числом"
+    if (isNaN(xElem.value) || xElem.value === "" || +xElem.value <= -3 || 3 <= +xElem.value) {
+        warning.innerText = "Координата Х должна быть числом из диапазона (-3; 3)"
         warning.style.display = "inline-block"
         x = null
     } else {
@@ -40,4 +40,14 @@ function buttonDisable(){
         document.getElementById("btn4").disabled = false
         document.getElementById("btn5").disabled = false
     }
+}
+
+let selectedButton = null
+function rChoose(button) {
+    if (selectedButton !== null) {
+        selectedButton.disabled = false
+    }
+    selectedButton = button
+    selectedButton.disabled = true
+    document.getElementById("chosen-button").value = button.value
 }
