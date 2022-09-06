@@ -12,22 +12,25 @@
         if (($x = @$_POST["x"]) != null && ($y = @$_POST["y"]) != null && ($r = @$_POST["R"]) != null) {
             if (($new_x = valid_X($x)) != null && ($new_y = valid_Y($y)) != null && ($new_r = valid_R($r)) != null) {
                 if ($new_x < 0 && $new_y < 0) {
-                    $main_result = "нет";
+                    $main_result = "нет (3я четверть)";
                 } elseif ($new_x < 0 && 0 < $new_y) {
                     if ($new_y < $new_x + $new_r/2) {
-                        $main_result = "да";
+                        $main_result = "да, точка попала в треугольник";
+                    } else {
+                        $main_result = "нет, точнка не попала в треугольник";
                     }
-                    $main_result = "нет";
                 } elseif ($new_x > 0 && $new_y < 0) {
                     if ($new_x < $new_r/2 && $new_y > -$r) {
-                        $main_result = "да";
+                        $main_result = "да, точка попала в прямоугольник";
+                    } else {
+                        $main_result = "нет, точка не попала в прямоугольник";
                     }
-                    $main_result = "нет";
                 } elseif ($new_x > 0 && $new_y > 0) {
                     if (hypot($new_x, $new_y) < $new_r/2) {
-                        $main_result = "да";
+                        $main_result = "да, точка попала в четверть круга";
+                    } else {
+                        $main_result = "нет, точка не попала в четверть круга";
                     }
-                    $main_result = "нет";
                 }
                 $result_x = $new_x;
                 $result_y = $new_y;
