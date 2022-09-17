@@ -1,8 +1,11 @@
+div.header{
+    text-align: right;
+}
+
 .center{
     /*margin: auto;*/
     text-align: center;
-    width: 50%;
-    border: 1px solid black;
+    width: 100%;
 }
 
 svg{
@@ -28,7 +31,13 @@ span#x-warning{
     font-size: 1rem;
 }
 
+div.data{
+    text-align: left;
+    padding-left: 40%;
+}
+
 input#submit{
+    text-align: center;
     margin-top: 3px;
 }
 
