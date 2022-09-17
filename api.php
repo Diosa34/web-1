@@ -119,9 +119,11 @@ $history_table = $history->select_row($number_of_records);
 <head>
     <meta charset="UTF-8">
     <title>Result</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="result.css">
 </head>
 <body>
+    <img src="https://c.tenor.com/oVyDK9zuAEwAAAAC/inside-out-sadness.gif">
+    <img src="https://miro.medium.com/max/335/1*FPEcfyMT3CVLrHRjnEdkXA.gif">
     <table class="result-table">
         <tr>
             <td>X</td>
