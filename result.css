@@ -1,3 +1,17 @@
-.result-table {
+body {
+    text-align: center;
+}
 
+div.sadness {
+    /*width: 100%;*/
+}
+
+table.result-table{
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+table.result-table td{
+    border: 1px solid black;
+    padding: 3px;
 }

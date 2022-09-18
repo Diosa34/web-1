@@ -122,8 +122,8 @@ $history_table = $history->select_row($number_of_records);
     <link rel="stylesheet" href="result.css">
 </head>
 <body>
-    <img src="https://c.tenor.com/oVyDK9zuAEwAAAAC/inside-out-sadness.gif">
-    <img src="https://miro.medium.com/max/335/1*FPEcfyMT3CVLrHRjnEdkXA.gif">
+    <div class="sadness"><img src="https://c.tenor.com/oVyDK9zuAEwAAAAC/inside-out-sadness.gif"></div>
+    <div class="joy"><img src="https://miro.medium.com/max/335/1*FPEcfyMT3CVLrHRjnEdkXA.gif"></div>
     <table class="result-table">
         <tr>
             <td>X</td>

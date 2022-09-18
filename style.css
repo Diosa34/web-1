@@ -1,5 +1,18 @@
 div.header{
+    font-family: "Monotype Corsiva", cursive;
+    width: 100%;
+}
+
+div.name {
+    font-family: inherit;
+    font-size: 50px;
+    font-style: oblique;
+    padding-left: 1em;
+}
+
+div.numbers {
     text-align: right;
+    font-size: 25px;
 }
 
 .center{
@@ -12,10 +25,13 @@ div.graphic-part {
     float: left;
     display: block;
     width: 25%;
+    border: 1px solid black;
 }
 
 svg{
+    padding-top: 1em;
     font-size: 2rem;
+    border: 1px solid black;
 }
 
 div.photo{
@@ -46,21 +62,13 @@ span#x-warning{
 
 div.data{
     text-align: left;
-    padding-left: 40%;
+    white-space: nowrap;
 }
 
 input#submit{
     text-align: center;
-    margin-top: 3px;
-}
-
-table.result-table{
-    border-collapse: collapse;
-}
-
-table.result-table td{
-    border: 1px solid black;
-    padding: 3px;
+    margin-top: 1em;
+    width: 100%;
 }
 
 form {
@@ -69,4 +77,5 @@ form {
     bottom: 0;
     padding-right: 10em;
     padding-bottom: 10em;
+    line-height: 2;
 }
