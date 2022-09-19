@@ -1,3 +1,11 @@
+body {
+    background-repeat: no-repeat;
+    background-color: #fcab8a;
+    background-image: url("lee-min-ho-boys-over-flowers-03.jpg"); /* Цвет фона и путь к файлу */
+    background-size: 40%;
+    background-position: center;
+}
+
 div.header{
     font-family: "Monotype Corsiva", cursive;
     width: 100%;
@@ -16,29 +24,30 @@ div.numbers {
 }
 
 .center{
+    display: table;
     /*margin: auto;*/
     text-align: center;
     width: 100%;
+    min-height: 500px;
 }
 
 div.graphic-part {
-    float: left;
-    display: block;
+    display: table-cell;
     width: 25%;
-    border: 1px solid black;
+    vertical-align: top;
 }
 
-svg{
+div.graphic-part svg{
     padding-top: 1em;
     font-size: 2rem;
-    border: 1px solid black;
+    width: 100%;
 }
 
-div.photo{
-    background-repeat: no-repeat;
-    background-image: url("lee-min-ho-boys-over-flowers-03.jpg"); /* Цвет фона и путь к файлу */
-    float: left;
+div.right-block{
+    display: table-cell;
     width: 100%;
+    vertical-align: bottom;
+    text-align: right;
 }
 
 input#x{
@@ -68,14 +77,14 @@ div.data{
 input#submit{
     text-align: center;
     margin-top: 1em;
-    width: 100%;
+    background-color: #fc805f;
+    border-width: 1px;
+    border-radius: 3px;
+    height: 25px;
 }
 
-form {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-right: 10em;
-    padding-bottom: 10em;
-    line-height: 2;
+div.right-block form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 100px;
 }

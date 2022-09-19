@@ -1,9 +1,15 @@
 body {
     text-align: center;
+    background-color: #fcab8a;
 }
 
-div.sadness {
-    /*width: 100%;*/
+div.image {
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+img#gif {
+    width: 25vw;
 }
 
 table.result-table{
