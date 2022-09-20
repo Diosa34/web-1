@@ -1,7 +1,7 @@
 body {
     background-repeat: no-repeat;
     background-color: #fcab8a;
-    background-image: url("lee-min-ho-boys-over-flowers-03.jpg"); /* Цвет фона и путь к файлу */
+    background-image: url("../pictures/lee-min-ho-boys-over-flowers-03.jpg"); /* Цвет фона и путь к файлу */
     background-size: 40%;
     background-position: center;
 }
