@@ -111,7 +111,7 @@ $_SESSION["att"][] = $curr;
         ?>
     </div>
     <table class="result-table">
-        <tr>
+        <tr class="table-header">
             <td>Дата</td>
             <td>X</td>
             <td>Y</td>
